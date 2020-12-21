@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home li {
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+}
+
+.home a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url("./craftsy-blended/img/bg-2.png");
+}
+
+
+.home{
+    width: 1140px;
+
+}
+
+/*HEADER*/
+
+.home header{
+    background-color: orangered;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    display: table;
+    margin-bottom: 20px;
+}
+
+.home header img{
+    float: left;
+}
+
+.home header ul.lista1{
+    float: left;
+    padding: 10px;
+}
+
+.home header ul.lista2{
+    float: right;
+    padding: 10px;
+}
+
+.home header ul.lista1 li{
+    padding: 10px;
+}
+
+/* FINALIZA HEADER */
+
+/* MAIN */
+.home main{
+    float: left;
+    width: 800px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+ /* PRODUCTOS */
+.home main section{
+    width: 380px;
+    margin: 10px;
+    float: left;
+}
+
+.home main section h2{
+    margin: 15px 0;
+
+}
+
+.home main section p{
+    margin-bottom: 15px 0;
+}
+
+.home main section button{
+    background-color: orangered;
+    border:orangered;
+}
+.home main section button a{
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+.home main section img{
+    width: 100%;
+}
+
+/* LATERAL */
+.home aside{
+    float: right;
+    width: 320px;
+
+}
+
+.home aside section h2{
+    background-color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    border: 1px solid skyblue;
+    margin-bottom: 10px;
+}
+
+.home aside section{
+    margin-bottom: 30px;
+}
+.home aside section article{
+    background-color: white;
+    border: 1px solid skyblue;
+    padding: 10px;
+}
+
+
+.home aside section article a{
+    color: black;
+    text-transform: none;
+    width: 105x;
+    padding: 5px 10px;
+    float:right;
+}
