@@ -4,16 +4,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --colorAnaranjado: orangered;
+}
+
 .home li {
     list-style: none;
-    display: inline;
-    font-weight: bold;
+    display: inline; /* estructura al lado */
+    font-weight: bold; /* los agranda */
 }
 
 .home a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    text-transform: uppercase; /* mayusculas */
 }
 
 body{
@@ -22,7 +26,9 @@ body{
 
 
 .home{
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+    margin-top: 100px;
 
 }
 
@@ -30,11 +36,14 @@ body{
 
 .home header{
     background-color: orangered;
+    max-width: 1140px;
     width: 100%;
-    margin-top: 10px;
     padding: 15px;
-    display: table;
     margin-bottom: 20px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
 
 .home header img{
@@ -43,6 +52,10 @@ body{
 
 .home header ul.lista1{
     float: left;
+    padding: 0px;
+}
+
+.home header li{
     padding: 10px;
 }
 
@@ -51,24 +64,29 @@ body{
     padding: 10px;
 }
 
-.home header ul.lista1 li{
-    padding: 10px;
-}
+
 
 /* FINALIZA HEADER */
 
 /* MAIN */
 .home main{
     float: left;
-    width: 800px;
+    width: 100%;
     background-color: white;
     margin-bottom: 10px;
 }
  /* PRODUCTOS */
 .home main section{
-    width: 380px;
+    width: 100%;
     margin: 10px;
     float: left;
+    position: relative;
+}
+
+.home main section img.icon{
+    width: 60px;
+    position:absolute;
+    right: 20px;
 }
 
 .home main section h2{
@@ -95,10 +113,13 @@ body{
     width: 100%;
 }
 
+
+
 /* LATERAL */
 .home aside{
-    float: right;
-    width: 320px;
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
 
 }
 
@@ -110,6 +131,8 @@ body{
     margin-bottom: 10px;
 }
 
+/* articulos */
+
 .home aside section{
     margin-bottom: 30px;
 }
@@ -117,13 +140,70 @@ body{
     background-color: white;
     border: 1px solid skyblue;
     padding: 10px;
+    position: relative;
+}
+
+.home aside section article img.icon{
+    position:absolute;
+    width: 50px;
+    left: 70px;
+    top: 10px;
 }
 
 
 .home aside section article a{
     color: black;
     text-transform: none;
-    width: 105x;
-    padding: 5px 10px;
-    float:right;
+    float: right;
+    width: 160px;
+    padding: 20px 10px;
+}
+
+/* PUBLICIDAD */
+
+.home aside section div#publicidad{
+    background-color: white;
+    border: 1px solid skyblue;
+}
+
+.home aside section div#publicidad img{
+    width: 100%;
+    padding: 5px;
+}
+
+
+@media(min-width:426px){
+    .home{
+        margin-top: 100px;
+    }
+
+    .home header ul.lista1{
+        display: inline;
+    }
+
+    .home header ul.listacelu{
+        display: none;
+    }
+
+    .home main section{
+        max-width: 46%;
+    }
+    .home aside{
+        width: 50%;
+    }
+
+}
+
+@media(min-width:769){
+    .home main{
+        width: 800px;
+    }
+
+    .home main section{
+        width: 50%;
+    }
+
+    .home aside{
+        width: 320px;
+    }
 }
